@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-container {
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.file-input {
+  position: absolute;
+  left: -9999px;
+}
+
+.file-label {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.defender-input,
+.upload-button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.upload-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+
+
